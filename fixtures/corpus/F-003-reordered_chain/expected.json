@@ -1,0 +1,9 @@
+{
+  "expected_code": "REORDERED",
+  "final_chain_head": "325efa0be0b52d1f6a78bbb74cde4a17414d516335e756de629f2f613d559780",
+  "id": "F-003",
+  "kind": "receipt_bundle",
+  "receipt_count": 3,
+  "title": "reordered chain",
+  "verdict": "invalid"
+}

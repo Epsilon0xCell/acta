@@ -1,0 +1,14 @@
+{
+  "authority": "Standing recomputed by ComputeStanding over the fixture receipts and standing_policy (specification Section 16)",
+  "expected_standing": {
+    "write": {
+      "actions": 10,
+      "minted": 36,
+      "standing": 36
+    }
+  },
+  "id": "F-023",
+  "kind": "standing",
+  "title": "Standing mint saturates at the epoch cap and never above it",
+  "verdict": null
+}

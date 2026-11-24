@@ -1,0 +1,9 @@
+{
+  "expected_code": "REORDERED",
+  "final_chain_head": "6f045a0db81f62398deb3cce5bfce8726691591380ccbfc7a07bffcebe36c976",
+  "id": "F-022",
+  "kind": "receipt_bundle",
+  "receipt_count": 2,
+  "title": "truncated chain: the middle receipt is missing (sequence gap)",
+  "verdict": "invalid"
+}

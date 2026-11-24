@@ -1,0 +1,9 @@
+{
+  "expected_code": "TAMPERED",
+  "final_chain_head": "6f045a0db81f62398deb3cce5bfce8726691591380ccbfc7a07bffcebe36c976",
+  "id": "F-013",
+  "kind": "receipt_bundle",
+  "receipt_count": 3,
+  "title": "envelope payload in non-canonical encoding is rejected",
+  "verdict": "invalid"
+}

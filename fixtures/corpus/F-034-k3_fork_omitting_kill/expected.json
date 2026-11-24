@@ -1,0 +1,10 @@
+{
+  "expected_code": "TRUNCATED",
+  "final_chain_head": "6f045a0db81f62398deb3cce5bfce8726691591380ccbfc7a07bffcebe36c976",
+  "id": "F-034",
+  "kind": "receipt_bundle",
+  "receipt_count": 3,
+  "title": "K3: a forked chain omitting the kill, checked against the true head",
+  "verdict": "invalid",
+  "verify_expected_head": "bcdc7fe894657cf32a17f4d8586570594ad014b80d0dc925d742b976f4525fab"
+}

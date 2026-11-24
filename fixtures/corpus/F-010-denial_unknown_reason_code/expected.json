@@ -1,0 +1,13 @@
+{
+  "emitted_last_receipt": {
+    "reason_code": "bogus-code",
+    "type": "DENIAL"
+  },
+  "expected_code": "DENIAL_REASON_MISSING",
+  "final_chain_head": "01364d348b6eb0d0018f67d169d94e38fb01bc3a0d783abd71ac4d0232f1c340",
+  "id": "F-010",
+  "kind": "receipt_bundle",
+  "receipt_count": 2,
+  "title": "denial with an unknown reason code",
+  "verdict": "invalid"
+}

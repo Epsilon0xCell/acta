@@ -1,0 +1,9 @@
+{
+  "expected_code": "INVALID_RECEIPT",
+  "final_chain_head": "c141f5bfc023ab89eee77af06fc3db18e83f2b798b48e53c876295c6d8f3ceb7",
+  "id": "F-009",
+  "kind": "receipt_bundle",
+  "receipt_count": 2,
+  "title": "unknown receipt type must be rejected, not ignored",
+  "verdict": "invalid"
+}

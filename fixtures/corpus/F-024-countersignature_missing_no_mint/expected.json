@@ -1,0 +1,14 @@
+{
+  "authority": "Standing recomputed by ComputeStanding over the fixture receipts and standing_policy (specification Section 16)",
+  "expected_standing": {
+    "write": {
+      "actions": 1,
+      "minted": 0,
+      "standing": 0
+    }
+  },
+  "id": "F-024",
+  "kind": "standing",
+  "title": "a mint whose counterparty countersignature is missing mints nothing",
+  "verdict": null
+}

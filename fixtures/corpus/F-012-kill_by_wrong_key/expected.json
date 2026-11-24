@@ -1,0 +1,9 @@
+{
+  "expected_code": "KEY_ID_MISMATCH",
+  "final_chain_head": "5a62f0aee640378f9a8a5e058208e1fd2ffebd21a3b82abaa3b46b1b0e3254ae",
+  "id": "F-012",
+  "kind": "receipt_bundle",
+  "receipt_count": 4,
+  "title": "a kill attempted by the wrong key is invalid (K4)",
+  "verdict": "invalid"
+}

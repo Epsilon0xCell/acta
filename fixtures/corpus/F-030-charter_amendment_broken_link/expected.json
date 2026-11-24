@@ -1,0 +1,7 @@
+{
+  "expected_error_contains": "predecessor_charter_hash does not match",
+  "id": "F-030",
+  "kind": "charter_chain",
+  "title": "charter amendment with a broken predecessor hash link",
+  "verdict": "invalid"
+}

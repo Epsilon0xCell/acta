@@ -1,0 +1,9 @@
+{
+  "expected_code": "TAMPERED",
+  "final_chain_head": "6f045a0db81f62398deb3cce5bfce8726691591380ccbfc7a07bffcebe36c976",
+  "id": "F-020",
+  "kind": "receipt_bundle",
+  "receipt_count": 3,
+  "title": "truncated envelope payload (PAE length manipulation)",
+  "verdict": "invalid"
+}

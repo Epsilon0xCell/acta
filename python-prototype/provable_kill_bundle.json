@@ -1,0 +1,1353 @@
+{
+  "bundle_version": "0.1",
+  "receipts": [
+    {
+      "action": {
+        "arguments_hash": "135ea3d389ecaa7d6c9cb49ae34d5e1347d4807040f8958767dbc58c6bc43a1f",
+        "name": "grant.delegate"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiIxMzVlYTNkMzg5ZWNhYTdkNmM5Y2I0OWFlMzRkNWUxMzQ3ZDQ4MDcwNDBmODk1ODc2N2RiYzU4YzZiYzQzYTFmIiwibmFtZSI6ImdyYW50LmRlbGVnYXRlIn0sImFnZW50Ijp7ImlkIjoiYWdlbnQtcm9ndWUtMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiZGVsZWdhdGlvbl9tYW5pZmVzdF9pZCI6Im0tcm9ndWUiLCJkZWxlZ2F0b3IiOiJmb3VuZGVyIiwiZWZmZWN0cyI6eyJhcnRpZmFjdHNfY2hhbmdlZCI6W10sImV4dGVybmFsX2NhbGxzIjpbXSwic3ViX2RlbGVnYXRpb25zIjpbXX0sInByaW9yX3JlY2VpcHRfaGFzaCI6IjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJyZWNlaXB0X2lkIjoiZy0wMDAwIiwicmVjZWlwdF90eXBlIjoiR1JBTlQiLCJyZWNlaXB0X3ZlcnNpb24iOiIwLjEiLCJyZXN1bHRfaGFzaCI6IjRiYjlmYzU4ODNkN2I2OTBkMmJkM2YwMmYwNjEwMjc3YjEwYTI3MmM4YzU1ODgwZjZiODk5MTNiYzljOGMxYWIiLCJzY29wZV9ncmFudGVkIjoidG9vbHM9W3JlcG8ud3JpdGUscmVwby5yZWFkXTtyZXNvdXJjZXM9W3JlcG9dO29wcz1bY2FsbF07bGltaXRzPXtleHRlcm5hbF9jYWxscz0xMDAsc3BlbmRfdW5pdHM9MTAwMDB9Iiwic2VxdWVuY2UiOjAsInRpbWVzdGFtcCI6MTc2MzkwMDAwMH0=",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "ix8NGGC+BEEVv/ia3YApW11ghZ1G03fRrFlLSH8vZPs="
+          }
+        ]
+      },
+      "prior_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt_hash": "79f1ea459361445a5f67fb6b4cf77693ff8ad08bea976d47a2319115d32e9953",
+      "receipt_id": "g-0000",
+      "receipt_type": "GRANT",
+      "receipt_version": "0.1",
+      "result_hash": "4bb9fc5883d7b690d2bd3f02f0610277b10a272c8c55880f6b89913bc9c8c1ab",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 0,
+      "timestamp": 1763900000
+    },
+    {
+      "action": {
+        "arguments_hash": "41c0e7b4a8fe34fa21d7eba7e78f5970dbd3d95d180d887ba444f4350b829e92",
+        "name": "grant.delegate"
+      },
+      "agent": {
+        "id": "agent-rogue-child-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "delegation_manifest_id": "m-rogue-child",
+      "delegator": "rogue",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI0MWMwZTdiNGE4ZmUzNGZhMjFkN2ViYTdlNzhmNTk3MGRiZDNkOTVkMTgwZDg4N2JhNDQ0ZjQzNTBiODI5ZTkyIiwibmFtZSI6ImdyYW50LmRlbGVnYXRlIn0sImFnZW50Ijp7ImlkIjoiYWdlbnQtcm9ndWUtY2hpbGQtMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiZGVsZWdhdGlvbl9tYW5pZmVzdF9pZCI6Im0tcm9ndWUtY2hpbGQiLCJkZWxlZ2F0b3IiOiJyb2d1ZSIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiI3OWYxZWE0NTkzNjE0NDVhNWY2N2ZiNmI0Y2Y3NzY5M2ZmOGFkMDhiZWE5NzZkNDdhMjMxOTExNWQzMmU5OTUzIiwicmVjZWlwdF9pZCI6ImctMDAwMSIsInJlY2VpcHRfdHlwZSI6IkdSQU5UIiwicmVjZWlwdF92ZXJzaW9uIjoiMC4xIiwicmVzdWx0X2hhc2giOiI0YmI5ZmM1ODgzZDdiNjkwZDJiZDNmMDJmMDYxMDI3N2IxMGEyNzJjOGM1NTg4MGY2Yjg5OTEzYmM5YzhjMWFiIiwic2NvcGVfZ3JhbnRlZCI6InRvb2xzPVtyZXBvLndyaXRlXTtyZXNvdXJjZXM9W3JlcG9dO29wcz1bY2FsbF07bGltaXRzPXtleHRlcm5hbF9jYWxscz0xMDAsc3BlbmRfdW5pdHM9MTAwMH0iLCJzZXF1ZW5jZSI6MSwidGltZXN0YW1wIjoxNzYzOTAwMDEwfQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "Afvyw4+CRz5YT1SnspghGZ5G+8kjdGq9S1kyZHEGZ24="
+          }
+        ]
+      },
+      "prior_receipt_hash": "79f1ea459361445a5f67fb6b4cf77693ff8ad08bea976d47a2319115d32e9953",
+      "receipt_hash": "8e4cbd3066c56190853a2a72b3ddca4d633f6c0660c8ac8025c877185ad82f35",
+      "receipt_id": "g-0001",
+      "receipt_type": "GRANT",
+      "receipt_version": "0.1",
+      "result_hash": "4bb9fc5883d7b690d2bd3f02f0610277b10a272c8c55880f6b89913bc9c8c1ab",
+      "scope_granted": "tools=[repo.write];resources=[repo];ops=[call];limits={external_calls=100,spend_units=1000}",
+      "sequence": 1,
+      "timestamp": 1763900010
+    },
+    {
+      "action": {
+        "arguments_hash": "d1f6e5af6367c8508b02d9fbd6650426fc1ceb12d113c17d61674f1c4b2bd74f",
+        "name": "grant.delegate"
+      },
+      "agent": {
+        "id": "agent-sibling-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "delegation_manifest_id": "m-sibling",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJkMWY2ZTVhZjYzNjdjODUwOGIwMmQ5ZmJkNjY1MDQyNmZjMWNlYjEyZDExM2MxN2Q2MTY3NGYxYzRiMmJkNzRmIiwibmFtZSI6ImdyYW50LmRlbGVnYXRlIn0sImFnZW50Ijp7ImlkIjoiYWdlbnQtc2libGluZy0xIiwibW9kZWwiOiJtb2RlbC14IiwibW9kZWxfdmVyc2lvbiI6IjEuMCJ9LCJkZWxlZ2F0aW9uX21hbmlmZXN0X2lkIjoibS1zaWJsaW5nIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiI4ZTRjYmQzMDY2YzU2MTkwODUzYTJhNzJiM2RkY2E0ZDYzM2Y2YzA2NjBjOGFjODAyNWM4NzcxODVhZDgyZjM1IiwicmVjZWlwdF9pZCI6ImctMDAwMiIsInJlY2VpcHRfdHlwZSI6IkdSQU5UIiwicmVjZWlwdF92ZXJzaW9uIjoiMC4xIiwicmVzdWx0X2hhc2giOiI0YmI5ZmM1ODgzZDdiNjkwZDJiZDNmMDJmMDYxMDI3N2IxMGEyNzJjOGM1NTg4MGY2Yjg5OTEzYmM5YzhjMWFiIiwic2NvcGVfZ3JhbnRlZCI6InRvb2xzPVtyZXBvLndyaXRlLHJlcG8ucmVhZF07cmVzb3VyY2VzPVtyZXBvXTtvcHM9W2NhbGxdO2xpbWl0cz17ZXh0ZXJuYWxfY2FsbHM9MTAwLHNwZW5kX3VuaXRzPTEwMDAwfSIsInNlcXVlbmNlIjoyLCJ0aW1lc3RhbXAiOjE3NjM5MDAwMjB9",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "N00rEOSIcITEDVOfsUtwf68VAXrFyahtpPLoImdaM60="
+          }
+        ]
+      },
+      "prior_receipt_hash": "8e4cbd3066c56190853a2a72b3ddca4d633f6c0660c8ac8025c877185ad82f35",
+      "receipt_hash": "0202540ddc0822d4417c796c8bac579144d4e79f439ff988fdc33394ab1fbdd9",
+      "receipt_id": "g-0002",
+      "receipt_type": "GRANT",
+      "receipt_version": "0.1",
+      "result_hash": "4bb9fc5883d7b690d2bd3f02f0610277b10a272c8c55880f6b89913bc9c8c1ab",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 2,
+      "timestamp": 1763900020
+    },
+    {
+      "action": {
+        "arguments_hash": "6fa556c81a5647ccc0329c9257c4b947e3da74749e539204440c120e0b992c67",
+        "authorisation_id": "auth-rogue-0-0",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "XG7h0SbZxnHNpIXqg4cRz/oOqCoa3XD5tY/gkryCddw=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI2ZmE1NTZjODFhNTY0N2NjYzAzMjljOTI1N2M0Yjk0N2UzZGE3NDc0OWU1MzkyMDQ0NDBjMTIwZTBiOTkyYzY3IiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtMC0wIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJYRzdoMFNiWnhuSE5wSVhxZzRjUnovb09xQ29hM1hENXRZL2drcnlDZGR3PSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiIwMjAyNTQwZGRjMDgyMmQ0NDE3Yzc5NmM4YmFjNTc5MTQ0ZDRlNzlmNDM5ZmY5ODhmZGMzMzM5NGFiMWZiZGQ5IiwicmVjZWlwdF9pZCI6ImctMDAwMyIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiZDVhNWZlZGYzN2JjZGQwYjVkYmU5OGIyYjk3OGI2OWQ0NzE4NGY4MGRmYjYwMjRkNGEwNzQyMzllZTQxMjhjZSIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6MywidGltZXN0YW1wIjoxNzYzOTAzNjAwfQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "yRs79ORooxT6l1zX3d77HC3tPVlMzm3Kgxui106dQEQ="
+          }
+        ]
+      },
+      "prior_receipt_hash": "0202540ddc0822d4417c796c8bac579144d4e79f439ff988fdc33394ab1fbdd9",
+      "receipt_hash": "ca0f26c7993ba93cc926aa42ee023c6bd524350482c1f0cf23075063a126f267",
+      "receipt_id": "g-0003",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "d5a5fedf37bcdd0b5dbe98b2b978b69d47184f80dfb6024d4a074239ee4128ce",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 3,
+      "timestamp": 1763903600
+    },
+    {
+      "action": {
+        "arguments_hash": "091b3eae05ecbe8644b7b20bfa042db5c6a47a9e39057d75fd3f907b3c9ed238",
+        "authorisation_id": "auth-rogue-0-1",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "OhjoM97BOhNTYBaX/2KB35w4zJNl8zqCH60bxrMY59g=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiIwOTFiM2VhZTA1ZWNiZTg2NDRiN2IyMGJmYTA0MmRiNWM2YTQ3YTllMzkwNTdkNzVmZDNmOTA3YjNjOWVkMjM4IiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtMC0xIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJPaGpvTTk3Qk9oTlRZQmFYLzJLQjM1dzR6Sk5sOHpxQ0g2MGJ4ck1ZNTlnPSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiJjYTBmMjZjNzk5M2JhOTNjYzkyNmFhNDJlZTAyM2M2YmQ1MjQzNTA0ODJjMWYwY2YyMzA3NTA2M2ExMjZmMjY3IiwicmVjZWlwdF9pZCI6ImctMDAwNCIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiMzQ0ODUwMTJlNmY3ZDk5M2E2NTU3MDA1YTE2ODA0MWY1NjYwNzhhN2FmODFmZGZlZDRjZjA4MTI0ZTEwMzBmOSIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6NCwidGltZXN0YW1wIjoxNzYzOTA0MjAwfQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "pV2rzAX2ESSno+s/Kb5Tjps36HIh4ATr5OwYQqoMsbE="
+          }
+        ]
+      },
+      "prior_receipt_hash": "ca0f26c7993ba93cc926aa42ee023c6bd524350482c1f0cf23075063a126f267",
+      "receipt_hash": "fe330f0dba152df927c757aa7978d43b4e025bc5e642aa321714af4383ab1287",
+      "receipt_id": "g-0004",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "34485012e6f7d993a6557005a168041f566078a7af81fdfed4cf08124e1030f9",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 4,
+      "timestamp": 1763904200
+    },
+    {
+      "action": {
+        "arguments_hash": "2c2c947fa8dadcbb20075eb1aec62c8fd64e702d3ba5faa6b5a6d03850499231",
+        "authorisation_id": "auth-rogue-1-0",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "XzGHzY9iozEUYiG/nUUQjeHLLcU8Juf6c+rykFlHUj8=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiIyYzJjOTQ3ZmE4ZGFkY2JiMjAwNzVlYjFhZWM2MmM4ZmQ2NGU3MDJkM2JhNWZhYTZiNWE2ZDAzODUwNDk5MjMxIiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtMS0wIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJYekdIelk5aW96RVVZaUcvblVVUWplSExMY1U4SnVmNmMrcnlrRmxIVWo4PSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiJmZTMzMGYwZGJhMTUyZGY5MjdjNzU3YWE3OTc4ZDQzYjRlMDI1YmM1ZTY0MmFhMzIxNzE0YWY0MzgzYWIxMjg3IiwicmVjZWlwdF9pZCI6ImctMDAwNSIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiZGU2MDdlYjI0NjllODM4ZjU0MzU1OTM4ZDU4YWEzYjkyYjgwMGYxNDdjMDViYjE5ZTZmNDE3NWQzYWRkMWU4NyIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6NSwidGltZXN0YW1wIjoxNzYzOTkwMDAwfQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "7bGgi9F0l+LyOYA8KwH+lrpDwLBs/EcE/Q8p4z6NrX8="
+          }
+        ]
+      },
+      "prior_receipt_hash": "fe330f0dba152df927c757aa7978d43b4e025bc5e642aa321714af4383ab1287",
+      "receipt_hash": "7c7f1e47fc3ebbb3670163b0898814e09ccab78d7426d0a00dddcbc483914772",
+      "receipt_id": "g-0005",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "de607eb2469e838f54355938d58aa3b92b800f147c05bb19e6f4175d3add1e87",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 5,
+      "timestamp": 1763990000
+    },
+    {
+      "action": {
+        "arguments_hash": "c926d97f9c09a906f459925e3bfe764583ba3f7de7d7583d7f1382eef714a592",
+        "authorisation_id": "auth-rogue-1-1",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "7Of5ivCEN4vHvQNb0M7Aw8Ok0vg0MhovMFNbKQ/QdBs=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJjOTI2ZDk3ZjljMDlhOTA2ZjQ1OTkyNWUzYmZlNzY0NTgzYmEzZjdkZTdkNzU4M2Q3ZjEzODJlZWY3MTRhNTkyIiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtMS0xIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiI3T2Y1aXZDRU40dkh2UU5iME03QXc4T2swdmcwTWhvdk1GTmJLUS9RZEJzPSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiI3YzdmMWU0N2ZjM2ViYmIzNjcwMTYzYjA4OTg4MTRlMDljY2FiNzhkNzQyNmQwYTAwZGRkY2JjNDgzOTE0NzcyIiwicmVjZWlwdF9pZCI6ImctMDAwNiIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiZGZiNjViM2U3ZDdjNWQxODcxZjZiMzIwOGI0ZDYyZTYzNWRlMjVjZDg0YWI1M2QzNWU3Mjk2OGVjMWVjNjIxNSIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6NiwidGltZXN0YW1wIjoxNzYzOTkwNjAwfQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "Gqc2qyS9CYyAzaH2K71JETFSgR5Lyh0TUrnWQHm284I="
+          }
+        ]
+      },
+      "prior_receipt_hash": "7c7f1e47fc3ebbb3670163b0898814e09ccab78d7426d0a00dddcbc483914772",
+      "receipt_hash": "a13366f135ef02588b7857a0848ef58031072aaf634023fab49feb22df7d716e",
+      "receipt_id": "g-0006",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "dfb65b3e7d7c5d1871f6b3208b4d62e635de25cd84ab53d35e72968ec1ec6215",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 6,
+      "timestamp": 1763990600
+    },
+    {
+      "action": {
+        "arguments_hash": "5475161af9eb48e714ae9ac5822d029e651f6231db08df59d99bfcd072c0d48b",
+        "authorisation_id": "auth-rogue-2-0",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "5fgxpbL0MP0vmG4Q4Is/IdVDJKWhx+Ek/WK7kTfzhI8=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI1NDc1MTYxYWY5ZWI0OGU3MTRhZTlhYzU4MjJkMDI5ZTY1MWY2MjMxZGIwOGRmNTlkOTliZmNkMDcyYzBkNDhiIiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtMi0wIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiI1Zmd4cGJMME1QMHZtRzRRNElzL0lkVkRKS1doeCtFay9XSzdrVGZ6aEk4PSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiJhMTMzNjZmMTM1ZWYwMjU4OGI3ODU3YTA4NDhlZjU4MDMxMDcyYWFmNjM0MDIzZmFiNDlmZWIyMmRmN2Q3MTZlIiwicmVjZWlwdF9pZCI6ImctMDAwNyIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiODhkNDg3N2NmYmY1YTM2NWY1MGUzMzRkYTAwN2YzNmFmMjc5NjZkNjJjOGM1MjgwOGY3N2QxMjBhODNmOTBiNCIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6NywidGltZXN0YW1wIjoxNzY0MDc2NDAwfQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "Q2PrGDdBibg3OzZiNjg5q7YKOdhfagPZuNQ5nxucmfQ="
+          }
+        ]
+      },
+      "prior_receipt_hash": "a13366f135ef02588b7857a0848ef58031072aaf634023fab49feb22df7d716e",
+      "receipt_hash": "3a0856d93845431c9f1175b0a442c09a2417a281da3daf089357b98cf60022f1",
+      "receipt_id": "g-0007",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "88d4877cfbf5a365f50e334da007f36af27966d62c8c52808f77d120a83f90b4",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 7,
+      "timestamp": 1764076400
+    },
+    {
+      "action": {
+        "arguments_hash": "bb0ce78d5bb4c54e2fd9e7422b650b134b78e6e0dce52f4f70cc1def398d5db7",
+        "authorisation_id": "auth-rogue-2-1",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "OFUfvdKfkmYhFkvBhPZuPLoTvj2gBdMNh0JMqcqnXPo=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJiYjBjZTc4ZDViYjRjNTRlMmZkOWU3NDIyYjY1MGIxMzRiNzhlNmUwZGNlNTJmNGY3MGNjMWRlZjM5OGQ1ZGI3IiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtMi0xIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJPRlVmdmRLZmttWWhGa3ZCaFBadVBMb1R2ajJnQmRNTmgwSk1xY3FuWFBvPSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiIzYTA4NTZkOTM4NDU0MzFjOWYxMTc1YjBhNDQyYzA5YTI0MTdhMjgxZGEzZGFmMDg5MzU3Yjk4Y2Y2MDAyMmYxIiwicmVjZWlwdF9pZCI6ImctMDAwOCIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiNTlkMjBhMjRlOWVkNTJmYmI2NGQ4NjAwOTYzMWNhY2ZlM2E4ODVmOGIxY2NkMTk5NTk1ZmM5ODhkNTJkMjlmYyIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6OCwidGltZXN0YW1wIjoxNzY0MDc3MDAwfQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "VHYhQX6GLuZN+GSMjcnyv+KVwqIDBoyMQ25ALleG/38="
+          }
+        ]
+      },
+      "prior_receipt_hash": "3a0856d93845431c9f1175b0a442c09a2417a281da3daf089357b98cf60022f1",
+      "receipt_hash": "a3836f0e8dfed87be2e86ebc5c3b512c8d754852d345953a2430cf962e9b2ce2",
+      "receipt_id": "g-0008",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "59d20a24e9ed52fbb64d86009631cacfe3a885f8b1ccd199595fc988d52d29fc",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 8,
+      "timestamp": 1764077000
+    },
+    {
+      "action": {
+        "arguments_hash": "31db4e26cfc5e79b53efd26dbd0ed894927ce7acb40a381ce9bc0046e1d5b5bf",
+        "authorisation_id": "auth-rogue-3-0",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "QayMHTpsrcJKxlRlKBGmvyXaYC2H4QX1Ty4hh/OwCD8=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiIzMWRiNGUyNmNmYzVlNzliNTNlZmQyNmRiZDBlZDg5NDkyN2NlN2FjYjQwYTM4MWNlOWJjMDA0NmUxZDViNWJmIiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtMy0wIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJRYXlNSFRwc3JjSkt4bFJsS0JHbXZ5WGFZQzJINFFYMVR5NGhoL093Q0Q4PSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiJhMzgzNmYwZThkZmVkODdiZTJlODZlYmM1YzNiNTEyYzhkNzU0ODUyZDM0NTk1M2EyNDMwY2Y5NjJlOWIyY2UyIiwicmVjZWlwdF9pZCI6ImctMDAwOSIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiNDQ5MmMxMjBiMTU1Mjg1Y2YyNjI0ZjdlNzNhZmM5ZDUzZWZkM2I1ODJjMTBlY2Q0NzU3Yjc2ODRlMjE3YzkxZiIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6OSwidGltZXN0YW1wIjoxNzY0MTYyODAwfQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "MtbbDHxEUvLk6dLaNlWoL2PmB2j6x9va7xXPOw6a1jU="
+          }
+        ]
+      },
+      "prior_receipt_hash": "a3836f0e8dfed87be2e86ebc5c3b512c8d754852d345953a2430cf962e9b2ce2",
+      "receipt_hash": "bdfa23b6a60dbc2e48eee410ac71a7af24cdff44b265d7f05ea47ebf72fe28b3",
+      "receipt_id": "g-0009",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "4492c120b155285cf2624f7e73afc9d53efd3b582c10ecd4757b7684e217c91f",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 9,
+      "timestamp": 1764162800
+    },
+    {
+      "action": {
+        "arguments_hash": "a0546e1d652580e0fc55016fd9fb2598b3e3bd2a6fb2123b68a39ac141820f8c",
+        "authorisation_id": "auth-rogue-3-1",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "kgNHc7lNuea6uvhIdY7gh4cfEleuavFCecmjtvmBYm4=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJhMDU0NmUxZDY1MjU4MGUwZmM1NTAxNmZkOWZiMjU5OGIzZTNiZDJhNmZiMjEyM2I2OGEzOWFjMTQxODIwZjhjIiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtMy0xIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJrZ05IYzdsTnVlYTZ1dmhJZFk3Z2g0Y2ZFbGV1YXZGQ2VjbWp0dm1CWW00PSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiJiZGZhMjNiNmE2MGRiYzJlNDhlZWU0MTBhYzcxYTdhZjI0Y2RmZjQ0YjI2NWQ3ZjA1ZWE0N2ViZjcyZmUyOGIzIiwicmVjZWlwdF9pZCI6ImctMDAxMCIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiMWJlMzExNTA5NmU1YmYwZDU1Yjc3ZDFhMDFjYzNiZGJhMzljODg4YjZiM2Y2YmM0MjNiZDhhNjU2YjFmZGY2MyIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6MTAsInRpbWVzdGFtcCI6MTc2NDE2MzQwMH0=",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "Mi2WpN7hT7gDf0q9mnHD/P399l9f8WV+SKHUK0f2LmE="
+          }
+        ]
+      },
+      "prior_receipt_hash": "bdfa23b6a60dbc2e48eee410ac71a7af24cdff44b265d7f05ea47ebf72fe28b3",
+      "receipt_hash": "fe52bea9184fab5d77e9c28c1f39cad8a20c9ecba8d571086dbfba984e317c47",
+      "receipt_id": "g-0010",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "1be3115096e5bf0d55b77d1a01cc3bdba39c888b6b3f6bc423bd8a656b1fdf63",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 10,
+      "timestamp": 1764163400
+    },
+    {
+      "action": {
+        "arguments_hash": "f8976b94c2017c1d9a977fae6c6e42d6c0322fc65dd1c3525d6e33a5428ee0d7",
+        "authorisation_id": "auth-rogue-4-0",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "RHr8mHsP/Jxkmc8QBr2etKwU6aU9dCwTRT2bBSgITr4=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJmODk3NmI5NGMyMDE3YzFkOWE5NzdmYWU2YzZlNDJkNmMwMzIyZmM2NWRkMWMzNTI1ZDZlMzNhNTQyOGVlMGQ3IiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtNC0wIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJSSHI4bUhzUC9KeGttYzhRQnIyZXRLd1U2YVU5ZEN3VFJUMmJCU2dJVHI0PSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiJmZTUyYmVhOTE4NGZhYjVkNzdlOWMyOGMxZjM5Y2FkOGEyMGM5ZWNiYThkNTcxMDg2ZGJmYmE5ODRlMzE3YzQ3IiwicmVjZWlwdF9pZCI6ImctMDAxMSIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiMTRlMTRiZDI3YjQ2NGZiOGQ2YWE5MjNmYjVhYzI5ODNjMjY4MzM5NDRhMmZlNjdkYzEyYzRmYWIzMDEyMDhmMCIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6MTEsInRpbWVzdGFtcCI6MTc2NDI0OTIwMH0=",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "jgiuRx8BcpK2mW51T859PINsYpnw6H8Wl+WGs6ib0O4="
+          }
+        ]
+      },
+      "prior_receipt_hash": "fe52bea9184fab5d77e9c28c1f39cad8a20c9ecba8d571086dbfba984e317c47",
+      "receipt_hash": "60d338bce141ee9af11025f068bc76c122a65b3061bc57cfccfd4143ba166dd2",
+      "receipt_id": "g-0011",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "14e14bd27b464fb8d6aa923fb5ac2983c26833944a2fe67dc12c4fab301208f0",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 11,
+      "timestamp": 1764249200
+    },
+    {
+      "action": {
+        "arguments_hash": "571d57462c967009b22097ad8bb677f01af9b1bcba70309e362fb9e7a33ca2b5",
+        "authorisation_id": "auth-rogue-4-1",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "vex36cnBTtKUOl/5queQPjq6/UZ9pdmLc5/bDrwUm/g=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI1NzFkNTc0NjJjOTY3MDA5YjIyMDk3YWQ4YmI2NzdmMDFhZjliMWJjYmE3MDMwOWUzNjJmYjllN2EzM2NhMmI1IiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtNC0xIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJ2ZXgzNmNuQlR0S1VPbC81cXVlUVBqcTYvVVo5cGRtTGM1L2JEcndVbS9nPSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiI2MGQzMzhiY2UxNDFlZTlhZjExMDI1ZjA2OGJjNzZjMTIyYTY1YjMwNjFiYzU3Y2ZjY2ZkNDE0M2JhMTY2ZGQyIiwicmVjZWlwdF9pZCI6ImctMDAxMiIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiY2NmZDY0OTI0ZTdjNjBiMGQxNWExZmY5YTYzYjZkZjJiMWQ3MGVhOGY4Y2QyMDMxNjU5ZmRjYmRhZDM2MDYyMyIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6MTIsInRpbWVzdGFtcCI6MTc2NDI0OTgwMH0=",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "2MUfdt4SI/T4GAbYQrBJEFl3dyuUW/lFS529c9QzYJU="
+          }
+        ]
+      },
+      "prior_receipt_hash": "60d338bce141ee9af11025f068bc76c122a65b3061bc57cfccfd4143ba166dd2",
+      "receipt_hash": "04a5762e50178e9bfda0d0487ee724f54d761bc2916a0305e8ec7597900e047c",
+      "receipt_id": "g-0012",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "ccfd64924e7c60b0d15a1ff9a63b6df2b1d70ea8f8cd2031659fdcbdad360623",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 12,
+      "timestamp": 1764249800
+    },
+    {
+      "action": {
+        "arguments_hash": "56880deb2b467f2a05f7c0875c021ccab01d1b1c2e2bf686456326e3d9f793c5",
+        "authorisation_id": "auth-rogue-5-0",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "tscf8iuUpHyYO0irCcSvDIj+MBKpO1OwLanUSTUs5h8=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI1Njg4MGRlYjJiNDY3ZjJhMDVmN2MwODc1YzAyMWNjYWIwMWQxYjFjMmUyYmY2ODY0NTYzMjZlM2Q5Zjc5M2M1IiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtNS0wIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJ0c2NmOGl1VXBIeVlPMGlyQ2NTdkRJaitNQktwTzFPd0xhblVTVFVzNWg4PSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiIwNGE1NzYyZTUwMTc4ZTliZmRhMGQwNDg3ZWU3MjRmNTRkNzYxYmMyOTE2YTAzMDVlOGVjNzU5NzkwMGUwNDdjIiwicmVjZWlwdF9pZCI6ImctMDAxMyIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiOTc2MjIwNzVhNGY4MGYxYjAyMWFlYTkyYmJhODZmMDNkOGU4Y2ZmNzU1NmFkZWM0ODlhZTg1Y2IyZjRkYThlZSIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6MTMsInRpbWVzdGFtcCI6MTc2NDMzNTYwMH0=",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "Q7M9obAOFSFbW+V0Haiup31wvfPWdGlJxrOZWenLX6s="
+          }
+        ]
+      },
+      "prior_receipt_hash": "04a5762e50178e9bfda0d0487ee724f54d761bc2916a0305e8ec7597900e047c",
+      "receipt_hash": "4377738400e4772268fd9c99e0daf70d94e9daff38dbad4e49a3277a1e6eef12",
+      "receipt_id": "g-0013",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "97622075a4f80f1b021aea92bba86f03d8e8cff7556adec489ae85cb2f4da8ee",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 13,
+      "timestamp": 1764335600
+    },
+    {
+      "action": {
+        "arguments_hash": "4fce2742c5f1a81d8203693422f32062bfacbeea17c3e227733e291864a7ef10",
+        "authorisation_id": "auth-rogue-5-1",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "JOxGPeftdQa/n4iU1zU7vc8rf4jg4NVfp85W0w5J4Eo=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI0ZmNlMjc0MmM1ZjFhODFkODIwMzY5MzQyMmYzMjA2MmJmYWNiZWVhMTdjM2UyMjc3MzNlMjkxODY0YTdlZjEwIiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtNS0xIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJKT3hHUGVmdGRRYS9uNGlVMXpVN3ZjOHJmNGpnNE5WZnA4NVcwdzVKNEVvPSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiI0Mzc3NzM4NDAwZTQ3NzIyNjhmZDljOTllMGRhZjcwZDk0ZTlkYWZmMzhkYmFkNGU0OWEzMjc3YTFlNmVlZjEyIiwicmVjZWlwdF9pZCI6ImctMDAxNCIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiMTU4NjUxMTZjOTIzZTRmMWY2ODZlNGEwYTRjMGU5YTllOWI2MDE2ZDAzZGJjZDA5YzMxNTk3ODM5ZmJiNzAwZiIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6MTQsInRpbWVzdGFtcCI6MTc2NDMzNjIwMH0=",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "BKb9acpzZ8ubWgVJyxNypnFpqAzCSqYDRfv5eX+s9Go="
+          }
+        ]
+      },
+      "prior_receipt_hash": "4377738400e4772268fd9c99e0daf70d94e9daff38dbad4e49a3277a1e6eef12",
+      "receipt_hash": "76eede25cc7ff37fbb95dbecc32272b95e204effc155e1509e243e3c0b179d41",
+      "receipt_id": "g-0014",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "15865116c923e4f1f686e4a0a4c0e9a9e9b6016d03dbcd09c31597839fbb700f",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 14,
+      "timestamp": 1764336200
+    },
+    {
+      "action": {
+        "arguments_hash": "30c3940e61acce77fc043522955b41b3b2298db311fc2d7becc68da712b32e23",
+        "authorisation_id": "auth-rogue-6-0",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "QnghlWyfIn3nogdWLpTCMqOFwJYOjlgAFyEFM+n34J4=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiIzMGMzOTQwZTYxYWNjZTc3ZmMwNDM1MjI5NTViNDFiM2IyMjk4ZGIzMTFmYzJkN2JlY2M2OGRhNzEyYjMyZTIzIiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtNi0wIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJRbmdobFd5ZkluM25vZ2RXTHBUQ01xT0Z3SllPamxnQUZ5RUZNK24zNEo0PSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiI3NmVlZGUyNWNjN2ZmMzdmYmI5NWRiZWNjMzIyNzJiOTVlMjA0ZWZmYzE1NWUxNTA5ZTI0M2UzYzBiMTc5ZDQxIiwicmVjZWlwdF9pZCI6ImctMDAxNSIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiM2YwMDU2MDViNzAzZGJiNTI0YmJmOWQzOWM4OWVlMzMwMDk0YzAzNDFjMWY2OTc2N2FkMzc2OWYzY2ViODE3NyIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6MTUsInRpbWVzdGFtcCI6MTc2NDQyMjAwMH0=",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "RTClfB1+K/SbDmwLWD0O47vNsGisScNuAf7Mkd6gBV4="
+          }
+        ]
+      },
+      "prior_receipt_hash": "76eede25cc7ff37fbb95dbecc32272b95e204effc155e1509e243e3c0b179d41",
+      "receipt_hash": "41fbe5a8f53125e53c385aa24ca381afc1e76fb117030b2ce8de8a0715d5f43d",
+      "receipt_id": "g-0015",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "3f005605b703dbb524bbf9d39c89ee330094c0341c1f69767ad3769f3ceb8177",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 15,
+      "timestamp": 1764422000
+    },
+    {
+      "action": {
+        "arguments_hash": "9f8dbe68e02f53133b09c6890ba9fa58a5e4f8e1317d57a0bc98b84ada5140db",
+        "authorisation_id": "auth-rogue-6-1",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "YfPTiUo5Eea0ni1HxU/8z/BzOCFDYDYYfbkkeCeSrDc=",
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI5ZjhkYmU2OGUwMmY1MzEzM2IwOWM2ODkwYmE5ZmE1OGE1ZTRmOGUxMzE3ZDU3YTBiYzk4Yjg0YWRhNTE0MGRiIiwiYXV0aG9yaXNhdGlvbl9pZCI6ImF1dGgtcm9ndWUtNi0xIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJZZlBUaVVvNUVlYTBuaTFIeFUvOHovQnpPQ0ZEWURZWWZia2tlQ2VTckRjPSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiI0MWZiZTVhOGY1MzEyNWU1M2MzODVhYTI0Y2EzODFhZmMxZTc2ZmIxMTcwMzBiMmNlOGRlOGEwNzE1ZDVmNDNkIiwicmVjZWlwdF9pZCI6ImctMDAxNiIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiY2YxNTAwOTU2NzI0MGZkMGJlZmFlNGUwNWRkZmJlNzIyYWRjYmNkOGNiYWRjNjcxM2I5NWZmYjhjMGJjMjg2MyIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6MTYsInRpbWVzdGFtcCI6MTc2NDQyMjYwMH0=",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "03oq8S3tnNyd+dgm/l8Y/P58QQz3Ay7pPmZyGwkUwuU="
+          }
+        ]
+      },
+      "prior_receipt_hash": "41fbe5a8f53125e53c385aa24ca381afc1e76fb117030b2ce8de8a0715d5f43d",
+      "receipt_hash": "9d5417da392adebb0cecbcf2224afb6b6083c8d9b96d237061665373e149da2a",
+      "receipt_id": "g-0016",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "cf15009567240fd0befae4e05ddfbe722adcbcd8cbadc6713b95ffb8c0bc2863",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 16,
+      "timestamp": 1764422600
+    },
+    {
+      "action": {
+        "arguments_hash": "6f86d6d153f734a28fcbcf99b59234d736d30c3a4abf90ffdeff706d1a1fbc3e",
+        "budget_cost": 3,
+        "delegation_depth": 1,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-child-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-alpha",
+      "counterparty_sig": "J/qJszPyZ1Gq2BOl/xWPzIcFLMkpdjZUe7fcmG4b3ZQ=",
+      "delegation_manifest_id": "m-rogue-child",
+      "delegator": "rogue",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI2Zjg2ZDZkMTUzZjczNGEyOGZjYmNmOTliNTkyMzRkNzM2ZDMwYzNhNGFiZjkwZmZkZWZmNzA2ZDFhMWZiYzNlIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjEsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLWNoaWxkLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImNvdW50ZXJwYXJ0eV9pZCI6ImNvdW50ZXJwYXJ0eS1hbHBoYSIsImNvdW50ZXJwYXJ0eV9zaWciOiJKL3FKc3pQeVoxR3EyQk9sL3hXUHpJY0ZMTWtwZGpaVWU3ZmNtRzRiM1pRPSIsImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlLWNoaWxkIiwiZGVsZWdhdG9yIjoicm9ndWUiLCJlZmZlY3RzIjp7ImFydGlmYWN0c19jaGFuZ2VkIjpbXSwiZXh0ZXJuYWxfY2FsbHMiOltdLCJzdWJfZGVsZWdhdGlvbnMiOltdfSwicHJpb3JfcmVjZWlwdF9oYXNoIjoiOWQ1NDE3ZGEzOTJhZGViYjBjZWNiY2YyMjI0YWZiNmI2MDgzYzhkOWI5NmQyMzcwNjE2NjUzNzNlMTQ5ZGEyYSIsInJlY2VpcHRfaWQiOiJnLTAwMTciLCJyZWNlaXB0X3R5cGUiOiJBQ1RJT04iLCJyZWNlaXB0X3ZlcnNpb24iOiIwLjEiLCJyZXN1bHRfaGFzaCI6ImY4Yzk0ODgzZDJmMGMxNDQ3NWFlZWI1OTE1M2QwODEyNDZlOGI2MDI1NmRiNWU4MjJlNTVhNTVhMmVjZmIyYzUiLCJzY29wZV9ncmFudGVkIjoidG9vbHM9W3JlcG8ud3JpdGVdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwfSIsInNlcXVlbmNlIjoxNywidGltZXN0YW1wIjoxNzY0NDI1NjAwfQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "N52+q3VpvkEBlOmFAvMjUxL0txUs5/T1sR8Su3CxLSo="
+          }
+        ]
+      },
+      "prior_receipt_hash": "9d5417da392adebb0cecbcf2224afb6b6083c8d9b96d237061665373e149da2a",
+      "receipt_hash": "bfdd4de689abeb467dcd49fef5ba92349d26abb9f565316e31a643120ff91ce8",
+      "receipt_id": "g-0017",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "f8c94883d2f0c14475aeeb59153d081246e8b60256db5e822e55a55a2ecfb2c5",
+      "scope_granted": "tools=[repo.write];resources=[repo];ops=[call];limits={external_calls=100,spend_units=1000}",
+      "sequence": 17,
+      "timestamp": 1764425600
+    },
+    {
+      "action": {
+        "arguments_hash": "435e9a1587a4ff76c4df9001e144b99721cd57219069ec7c3fe27cc6fb668f18",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-sibling-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-beta",
+      "counterparty_sig": "exkqOPsLDzM3j85FZpy9PSvgB4JEWOMSTWWzsAFutO0=",
+      "delegation_manifest_id": "m-sibling",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI0MzVlOWExNTg3YTRmZjc2YzRkZjkwMDFlMTQ0Yjk5NzIxY2Q1NzIxOTA2OWVjN2MzZmUyN2NjNmZiNjY4ZjE4IiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXNpYmxpbmctMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiY291bnRlcnBhcnR5X2lkIjoiY291bnRlcnBhcnR5LWJldGEiLCJjb3VudGVycGFydHlfc2lnIjoiZXhrcU9Qc0xEek0zajg1RlpweTlQU3ZnQjRKRVdPTVNUV1d6c0FGdXRPMD0iLCJkZWxlZ2F0aW9uX21hbmlmZXN0X2lkIjoibS1zaWJsaW5nIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiJiZmRkNGRlNjg5YWJlYjQ2N2RjZDQ5ZmVmNWJhOTIzNDlkMjZhYmI5ZjU2NTMxNmUzMWE2NDMxMjBmZjkxY2U4IiwicmVjZWlwdF9pZCI6ImctMDAxOCIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiNDllNDE5OGViMjE0MWUzYWE5M2UwYTNiMWM4MTA0OTY2MGI2ZmQxZGNmZjc4ODQ5MDY4NzdkMmM1NzljNjA5NiIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6MTgsInRpbWVzdGFtcCI6MTc2MzkwMTgwMH0=",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "NKB5jLxv1f1uyQ8gpy4fZVRmkDeACXJURcIPNJAaWFg="
+          }
+        ]
+      },
+      "prior_receipt_hash": "bfdd4de689abeb467dcd49fef5ba92349d26abb9f565316e31a643120ff91ce8",
+      "receipt_hash": "1ae363dee96a7245ffaf05fd24d0cfe87c61c35aead35b1b7406ff32dabc83ff",
+      "receipt_id": "g-0018",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "49e4198eb2141e3aa93e0a3b1c81049660b6fd1dcff7884906877d2c579c6096",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 18,
+      "timestamp": 1763901800
+    },
+    {
+      "action": {
+        "arguments_hash": "399b560ce3be12c450fffbb0b293ea6709e6e9d8da3cc6a64aa92b80130285fb",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-sibling-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-beta",
+      "counterparty_sig": "zHnixsfsjSOd5WUqQ/vMnT059zPYNCdezJcDsrdYA24=",
+      "delegation_manifest_id": "m-sibling",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiIzOTliNTYwY2UzYmUxMmM0NTBmZmZiYjBiMjkzZWE2NzA5ZTZlOWQ4ZGEzY2M2YTY0YWE5MmI4MDEzMDI4NWZiIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXNpYmxpbmctMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiY291bnRlcnBhcnR5X2lkIjoiY291bnRlcnBhcnR5LWJldGEiLCJjb3VudGVycGFydHlfc2lnIjoiekhuaXhzZnNqU09kNVdVcVEvdk1uVDA1OXpQWU5DZGV6SmNEc3JkWUEyND0iLCJkZWxlZ2F0aW9uX21hbmlmZXN0X2lkIjoibS1zaWJsaW5nIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiIxYWUzNjNkZWU5NmE3MjQ1ZmZhZjA1ZmQyNGQwY2ZlODdjNjFjMzVhZWFkMzViMWI3NDA2ZmYzMmRhYmM4M2ZmIiwicmVjZWlwdF9pZCI6ImctMDAxOSIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiMWE4OTY3N2JjZTk4ZDg2N2IyODU4ZTk2M2FjMDk1MzNlZTEzNzVkOTg3ZTkxZmQ3NGQ4YzUzYTU5MGQ4MjY3ZCIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6MTksInRpbWVzdGFtcCI6MTc2Mzk4ODIwMH0=",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "YwHt/kEn1y2R25vFMCwXF4CAgHQkJmpoGfEKTwJIjxU="
+          }
+        ]
+      },
+      "prior_receipt_hash": "1ae363dee96a7245ffaf05fd24d0cfe87c61c35aead35b1b7406ff32dabc83ff",
+      "receipt_hash": "c8c0c10992823b9d0655cdc91aae5f75fa88124ab347300d3bc8ae335658f881",
+      "receipt_id": "g-0019",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "1a89677bce98d867b2858e963ac09533ee1375d987e91fd74d8c53a590d8267d",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 19,
+      "timestamp": 1763988200
+    },
+    {
+      "action": {
+        "arguments_hash": "a352798ddb7c2c1a7f07ffcb1ed201e0b0906d2929c7e764c54cd42ed2cacecc",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-sibling-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-beta",
+      "counterparty_sig": "lDwuta4Dd48ququGaItdY/jgD/Zb56iFN6U+e5KBkck=",
+      "delegation_manifest_id": "m-sibling",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJhMzUyNzk4ZGRiN2MyYzFhN2YwN2ZmY2IxZWQyMDFlMGIwOTA2ZDI5MjljN2U3NjRjNTRjZDQyZWQyY2FjZWNjIiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXNpYmxpbmctMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiY291bnRlcnBhcnR5X2lkIjoiY291bnRlcnBhcnR5LWJldGEiLCJjb3VudGVycGFydHlfc2lnIjoibER3dXRhNERkNDhxdXF1R2FJdGRZL2pnRC9aYjU2aUZONlUrZTVLQmtjaz0iLCJkZWxlZ2F0aW9uX21hbmlmZXN0X2lkIjoibS1zaWJsaW5nIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiJjOGMwYzEwOTkyODIzYjlkMDY1NWNkYzkxYWFlNWY3NWZhODgxMjRhYjM0NzMwMGQzYmM4YWUzMzU2NThmODgxIiwicmVjZWlwdF9pZCI6ImctMDAyMCIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiZTBhNjBkOTQ0ODc2YjBmZWUyOGM0NDQwYWI0ZGE1N2QwMTQ4MGQwZDllODM5MGVkYTE2NGFkYzEwYThkYmJkMCIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6MjAsInRpbWVzdGFtcCI6MTc2NDA3NDYwMH0=",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "SqQ71vW+AC8mPGuGhcoa4F1mD+ttb5UIPE6QE1U03ag="
+          }
+        ]
+      },
+      "prior_receipt_hash": "c8c0c10992823b9d0655cdc91aae5f75fa88124ab347300d3bc8ae335658f881",
+      "receipt_hash": "2ecf3fef38c57c060c2207521218922758dcb1188a87b87d6a912c2f2e24cfd9",
+      "receipt_id": "g-0020",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "e0a60d944876b0fee28c4440ab4da57d01480d0d9e8390eda164adc10a8dbbd0",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 20,
+      "timestamp": 1764074600
+    },
+    {
+      "action": {
+        "arguments_hash": "2b6d90e21dbeb9367a31c010de9be279d9d412402aacc8aa7e389b90d0adb3af",
+        "name": "delegation.revoke"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiIyYjZkOTBlMjFkYmViOTM2N2EzMWMwMTBkZTliZTI3OWQ5ZDQxMjQwMmFhY2M4YWE3ZTM4OWI5MGQwYWRiM2FmIiwibmFtZSI6ImRlbGVnYXRpb24ucmV2b2tlIn0sImFnZW50Ijp7ImlkIjoiYWdlbnQtcm9ndWUtMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiIyZWNmM2ZlZjM4YzU3YzA2MGMyMjA3NTIxMjE4OTIyNzU4ZGNiMTE4OGE4N2I4N2Q2YTkxMmMyZjJlMjRjZmQ5IiwicmVjZWlwdF9pZCI6ImctMDAyMSIsInJlY2VpcHRfdHlwZSI6IlJFVk9DQVRJT04iLCJyZWNlaXB0X3ZlcnNpb24iOiIwLjEiLCJyZXN1bHRfaGFzaCI6IjRiYjQ3ZjE4NmRmMjMzZTQ4YjA5ZDI0MWVlNGRlZmI4MjFhZGQwYzM1YWM4MzExNDY5ZmUxNTIyYzY4MTNkZDUiLCJyZXZva2VkX2J5X2tleV9pZCI6ImZvdW5kZXItcm9vdC1rZXktMSIsInJldm9rZWRfbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwic2NvcGVfZ3JhbnRlZCI6InRvb2xzPVtyZXBvLndyaXRlLHJlcG8ucmVhZF07cmVzb3VyY2VzPVtyZXBvXTtvcHM9W2NhbGxdO2xpbWl0cz17ZXh0ZXJuYWxfY2FsbHM9MTAwLHNwZW5kX3VuaXRzPTEwMDAwfSIsInNlcXVlbmNlIjoyMSwidGltZXN0YW1wIjoxNzY0NTA0ODYwLCJ2ZXJkaWN0Ijp7ImRlY2lzaW9uIjoicmV2b2tlIiwibWFuaWZlc3RfaWQiOiJtLXJvZ3VlIn19",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "n/dCGDUjksT/LQ5SmKKjGmPRWPxTFyh/MV0UPNADqR4="
+          }
+        ]
+      },
+      "prior_receipt_hash": "2ecf3fef38c57c060c2207521218922758dcb1188a87b87d6a912c2f2e24cfd9",
+      "receipt_hash": "e62ba7e5982c4fabc633741242bfb64aca65b56f635fc58b485a40988ad55d92",
+      "receipt_id": "g-0021",
+      "receipt_type": "REVOCATION",
+      "receipt_version": "0.1",
+      "result_hash": "4bb47f186df233e48b09d241ee4defb821add0c35ac8311469fe1522c6813dd5",
+      "revoked_by_key_id": "founder-root-key-1",
+      "revoked_manifest_id": "m-rogue",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 21,
+      "timestamp": 1764504860,
+      "verdict": {
+        "decision": "revoke",
+        "manifest_id": "m-rogue"
+      }
+    },
+    {
+      "action": {
+        "arguments_hash": "e3dfda1a775d80b8c314556ea5fabdee42657463a12ccfd98f29f00a2340b462",
+        "name": "standing.kill_burn"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJlM2RmZGExYTc3NWQ4MGI4YzMxNDU1NmVhNWZhYmRlZTQyNjU3NDYzYTEyY2NmZDk4ZjI5ZjAwYTIzNDBiNDYyIiwibmFtZSI6InN0YW5kaW5nLmtpbGxfYnVybiJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJraWxsZWRfYWdlbnRfaWRzIjpbImFnZW50LXJvZ3VlLTEiLCJhZ2VudC1yb2d1ZS1jaGlsZC0xIl0sInByaW9yX3JlY2VpcHRfaGFzaCI6ImU2MmJhN2U1OTgyYzRmYWJjNjMzNzQxMjQyYmZiNjRhY2E2NWI1NmY2MzVmYzU4YjQ4NWE0MDk4OGFkNTVkOTIiLCJyZWNlaXB0X2lkIjoiZy0wMDIyIiwicmVjZWlwdF90eXBlIjoiS0lMTC1CVVJOIiwicmVjZWlwdF92ZXJzaW9uIjoiMC4xIiwicmVzdWx0X2hhc2giOiIwMDYxNTE4Yjc0ODY4OTU2M2I2ZmQ2ZjllNzJlOGYxMGU4MDc5ZGQ4ZjY1M2ExYTVjYTIxNGYwMTVhZjUwZjdkIiwic2NvcGVfZ3JhbnRlZCI6InRvb2xzPVtyZXBvLndyaXRlLHJlcG8ucmVhZF07cmVzb3VyY2VzPVtyZXBvXTtvcHM9W2NhbGxdO2xpbWl0cz17ZXh0ZXJuYWxfY2FsbHM9MTAwLHNwZW5kX3VuaXRzPTEwMDAwfSIsInNlcXVlbmNlIjoyMiwidGltZXN0YW1wIjoxNzY0NTA0OTIwLCJ2ZXJkaWN0Ijp7ImRlY2lzaW9uIjoia2lsbC1idXJuIiwibWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwicG9zdF9raWxsX3N0YW5kaW5nIjp7ImRlZmF1bHQiOjAsIndyaXRlIjowfSwicHJlX2tpbGxfc3RhbmRpbmciOnsiZGVmYXVsdCI6MCwid3JpdGUiOjg0fX19",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "s01ej0yMDvszrQeMbeQAzElkjsQHg0Dg37WcY2txh78="
+          }
+        ]
+      },
+      "killed_agent_ids": [
+        "agent-rogue-1",
+        "agent-rogue-child-1"
+      ],
+      "prior_receipt_hash": "e62ba7e5982c4fabc633741242bfb64aca65b56f635fc58b485a40988ad55d92",
+      "receipt_hash": "faabd945472bd4d1f587a5d8dfff8bbbc9b0afbf781bcd84ddcfe79ffeea0ee7",
+      "receipt_id": "g-0022",
+      "receipt_type": "KILL-BURN",
+      "receipt_version": "0.1",
+      "result_hash": "0061518b748689563b6fd6f9e72e8f10e8079dd8f653a1a5ca214f015af50f7d",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 22,
+      "timestamp": 1764504920,
+      "verdict": {
+        "decision": "kill-burn",
+        "manifest_id": "m-rogue",
+        "post_kill_standing": {
+          "default": 0,
+          "write": 0
+        },
+        "pre_kill_standing": {
+          "default": 0,
+          "write": 84
+        }
+      }
+    },
+    {
+      "action": {
+        "arguments_hash": "f11c7cc3b9d7a3b977b42ab5129b89c6a86e6b0f1f22586704feb945ee06c1af",
+        "name": "repo.write",
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJmMTFjN2NjM2I5ZDdhM2I5NzdiNDJhYjUxMjliODljNmE4NmU2YjBmMWYyMjU4NjcwNGZlYjk0NWVlMDZjMWFmIiwibmFtZSI6InJlcG8ud3JpdGUiLCJzY29wZV9jbGFzcyI6IndyaXRlIn0sImFnZW50Ijp7ImlkIjoiYWdlbnQtcm9ndWUtMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiZGVsZWdhdGlvbl9tYW5pZmVzdF9pZCI6Im0tcm9ndWUiLCJkZWxlZ2F0b3IiOiJmb3VuZGVyIiwiZWZmZWN0cyI6eyJhcnRpZmFjdHNfY2hhbmdlZCI6W10sImV4dGVybmFsX2NhbGxzIjpbXSwic3ViX2RlbGVnYXRpb25zIjpbXX0sInByaW9yX3JlY2VpcHRfaGFzaCI6ImZhYWJkOTQ1NDcyYmQ0ZDFmNTg3YTVkOGRmZmY4YmJiYzliMGFmYmY3ODFiY2Q4NGRkY2ZlNzlmZmVlYTBlZTciLCJyZWFzb25fY29kZSI6InJldm9rZWQiLCJyZWNlaXB0X2lkIjoiZy0wMDIzIiwicmVjZWlwdF90eXBlIjoiREVOSUFMIiwicmVjZWlwdF92ZXJzaW9uIjoiMC4xIiwicmVzdWx0X2hhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1Iiwic2NvcGVfZ3JhbnRlZCI6InRvb2xzPVtyZXBvLndyaXRlLHJlcG8ucmVhZF07cmVzb3VyY2VzPVtyZXBvXTtvcHM9W2NhbGxdO2xpbWl0cz17ZXh0ZXJuYWxfY2FsbHM9MTAwLHNwZW5kX3VuaXRzPTEwMDAwfSIsInNlcXVlbmNlIjoyMywidGltZXN0YW1wIjoxNzY0NTA1NDAwLCJ2ZXJkaWN0Ijp7ImRlY2lzaW9uIjoiZGVueSIsImRldGFpbCI6ImRlbGVnYXRpb24gbS1yb2d1ZSwgb3IgYW4gYW5jZXN0b3Igb2YgaXQsIGlzIHJldm9rZWQgaW4gdGhlIHJlY2VpcHQgY2hhaW4iLCJpbmRlcGVuZGVudF9ncm91bmRzIjpbInJldm9rZWQiLCJzdGFuZGluZy1jZWlsaW5nIl0sInJlYXNvbl9jb2RlIjoicmV2b2tlZCIsInN0YW5kaW5nX2NlaWxpbmciOjB9fQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "CGbhFccCoOtbPObqvZrPrtiuKlQbfHXQO4xvHI8T+7I="
+          }
+        ]
+      },
+      "prior_receipt_hash": "faabd945472bd4d1f587a5d8dfff8bbbc9b0afbf781bcd84ddcfe79ffeea0ee7",
+      "reason_code": "revoked",
+      "receipt_hash": "6cbe744aad52b0aad8decefe8c0bfef10cf6aa3e84b817cd131c4ef4ef4fdcee",
+      "receipt_id": "g-0023",
+      "receipt_type": "DENIAL",
+      "receipt_version": "0.1",
+      "result_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 23,
+      "timestamp": 1764505400,
+      "verdict": {
+        "decision": "deny",
+        "detail": "delegation m-rogue, or an ancestor of it, is revoked in the receipt chain",
+        "independent_grounds": [
+          "revoked",
+          "standing-ceiling"
+        ],
+        "reason_code": "revoked",
+        "standing_ceiling": 0
+      }
+    },
+    {
+      "action": {
+        "arguments_hash": "f11c7cc3b9d7a3b977b42ab5129b89c6a86e6b0f1f22586704feb945ee06c1af",
+        "burn_amount": 0,
+        "name": "standing.burn",
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJmMTFjN2NjM2I5ZDdhM2I5NzdiNDJhYjUxMjliODljNmE4NmU2YjBmMWYyMjU4NjcwNGZlYjk0NWVlMDZjMWFmIiwiYnVybl9hbW91bnQiOjAsIm5hbWUiOiJzdGFuZGluZy5idXJuIiwic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiI2Y2JlNzQ0YWFkNTJiMGFhZDhkZWNlZmU4YzBiZmVmMTBjZjZhYTNlODRiODE3Y2QxMzFjNGVmNGVmNGZkY2VlIiwicmVjZWlwdF9pZCI6ImctMDAyNCIsInJlY2VpcHRfdHlwZSI6IkJVUk4iLCJyZWNlaXB0X3ZlcnNpb24iOiIwLjEiLCJyZWxhdGVkX3JlY2VpcHRfaWQiOiJnLTAwMjMiLCJyZXN1bHRfaGFzaCI6IjRhZWE4OTNjZDI4YjBjYTc4ZDhlNTlkOTI3NDNiMGQxZDkwOTRhOWIxMTZhZTRmNThiZWI5OWQ2NjUwODQ2MGIiLCJzY29wZV9ncmFudGVkIjoidG9vbHM9W3JlcG8ud3JpdGUscmVwby5yZWFkXTtyZXNvdXJjZXM9W3JlcG9dO29wcz1bY2FsbF07bGltaXRzPXtleHRlcm5hbF9jYWxscz0xMDAsc3BlbmRfdW5pdHM9MTAwMDB9Iiwic2VxdWVuY2UiOjI0LCJ0aW1lc3RhbXAiOjE3NjQ1MDU0MDAsInZlcmRpY3QiOnsiYnVybl9hbW91bnQiOjAsImRlY2lzaW9uIjoiYnVybiIsIm5vbWluYWxfYnVybiI6MTAsInBvc3RfYnVybl9zdGFuZGluZyI6MCwicHJlX2J1cm5fc3RhbmRpbmciOjAsInJlYXNvbl9jb2RlIjoicmV2b2tlZCJ9fQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "GrlMRrwggcWdcAP//+bmGP2DpYLcIcGQOKzvXRuoMKE="
+          }
+        ]
+      },
+      "prior_receipt_hash": "6cbe744aad52b0aad8decefe8c0bfef10cf6aa3e84b817cd131c4ef4ef4fdcee",
+      "receipt_hash": "1879ed9d458fcc9811fadfb189e422bb76635bd7f7a6fe0bf9ae78218da32e4f",
+      "receipt_id": "g-0024",
+      "receipt_type": "BURN",
+      "receipt_version": "0.1",
+      "related_receipt_id": "g-0023",
+      "result_hash": "4aea893cd28b0ca78d8e59d92743b0d1d9094a9b116ae4f58beb99d66508460b",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 24,
+      "timestamp": 1764505400,
+      "verdict": {
+        "burn_amount": 0,
+        "decision": "burn",
+        "nominal_burn": 10,
+        "post_burn_standing": 0,
+        "pre_burn_standing": 0,
+        "reason_code": "revoked"
+      }
+    },
+    {
+      "action": {
+        "arguments_hash": "914b53c0ae96e60abb43d13606f808b59d3387b402e3a16ad3f53f523798a991",
+        "name": "repo.write",
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-child-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "delegation_manifest_id": "m-rogue-child",
+      "delegator": "rogue",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI5MTRiNTNjMGFlOTZlNjBhYmI0M2QxMzYwNmY4MDhiNTlkMzM4N2I0MDJlM2ExNmFkM2Y1M2Y1MjM3OThhOTkxIiwibmFtZSI6InJlcG8ud3JpdGUiLCJzY29wZV9jbGFzcyI6IndyaXRlIn0sImFnZW50Ijp7ImlkIjoiYWdlbnQtcm9ndWUtY2hpbGQtMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiZGVsZWdhdGlvbl9tYW5pZmVzdF9pZCI6Im0tcm9ndWUtY2hpbGQiLCJkZWxlZ2F0b3IiOiJyb2d1ZSIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiIxODc5ZWQ5ZDQ1OGZjYzk4MTFmYWRmYjE4OWU0MjJiYjc2NjM1YmQ3ZjdhNmZlMGJmOWFlNzgyMThkYTMyZTRmIiwicmVhc29uX2NvZGUiOiJyZXZva2VkIiwicmVjZWlwdF9pZCI6ImctMDAyNSIsInJlY2VpcHRfdHlwZSI6IkRFTklBTCIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZV07cmVzb3VyY2VzPVtyZXBvXTtvcHM9W2NhbGxdO2xpbWl0cz17ZXh0ZXJuYWxfY2FsbHM9MTAwLHNwZW5kX3VuaXRzPTEwMDB9Iiwic2VxdWVuY2UiOjI1LCJ0aW1lc3RhbXAiOjE3NjQ1MDU0NjAsInZlcmRpY3QiOnsiZGVjaXNpb24iOiJkZW55IiwiZGV0YWlsIjoiZGVsZWdhdGlvbiBtLXJvZ3VlLWNoaWxkLCBvciBhbiBhbmNlc3RvciBvZiBpdCwgaXMgcmV2b2tlZCBpbiB0aGUgcmVjZWlwdCBjaGFpbiIsImluZGVwZW5kZW50X2dyb3VuZHMiOlsicmV2b2tlZCIsInN0YW5kaW5nLWNlaWxpbmciXSwicmVhc29uX2NvZGUiOiJyZXZva2VkIiwic3RhbmRpbmdfY2VpbGluZyI6MH19",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "rLdO2kdSV8u3QX+rxd9E5Edmh58vSpr5l5zuqavDn3s="
+          }
+        ]
+      },
+      "prior_receipt_hash": "1879ed9d458fcc9811fadfb189e422bb76635bd7f7a6fe0bf9ae78218da32e4f",
+      "reason_code": "revoked",
+      "receipt_hash": "9e11c25c42ba3fa3a7ffb616add0bcf19c3901600f37adc69af227f263a4c753",
+      "receipt_id": "g-0025",
+      "receipt_type": "DENIAL",
+      "receipt_version": "0.1",
+      "result_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope_granted": "tools=[repo.write];resources=[repo];ops=[call];limits={external_calls=100,spend_units=1000}",
+      "sequence": 25,
+      "timestamp": 1764505460,
+      "verdict": {
+        "decision": "deny",
+        "detail": "delegation m-rogue-child, or an ancestor of it, is revoked in the receipt chain",
+        "independent_grounds": [
+          "revoked",
+          "standing-ceiling"
+        ],
+        "reason_code": "revoked",
+        "standing_ceiling": 0
+      }
+    },
+    {
+      "action": {
+        "arguments_hash": "914b53c0ae96e60abb43d13606f808b59d3387b402e3a16ad3f53f523798a991",
+        "burn_amount": 0,
+        "name": "standing.burn",
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-child-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "delegation_manifest_id": "m-rogue-child",
+      "delegator": "rogue",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI5MTRiNTNjMGFlOTZlNjBhYmI0M2QxMzYwNmY4MDhiNTlkMzM4N2I0MDJlM2ExNmFkM2Y1M2Y1MjM3OThhOTkxIiwiYnVybl9hbW91bnQiOjAsIm5hbWUiOiJzdGFuZGluZy5idXJuIiwic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLWNoaWxkLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlLWNoaWxkIiwiZGVsZWdhdG9yIjoicm9ndWUiLCJlZmZlY3RzIjp7ImFydGlmYWN0c19jaGFuZ2VkIjpbXSwiZXh0ZXJuYWxfY2FsbHMiOltdLCJzdWJfZGVsZWdhdGlvbnMiOltdfSwicHJpb3JfcmVjZWlwdF9oYXNoIjoiOWUxMWMyNWM0MmJhM2ZhM2E3ZmZiNjE2YWRkMGJjZjE5YzM5MDE2MDBmMzdhZGM2OWFmMjI3ZjI2M2E0Yzc1MyIsInJlY2VpcHRfaWQiOiJnLTAwMjYiLCJyZWNlaXB0X3R5cGUiOiJCVVJOIiwicmVjZWlwdF92ZXJzaW9uIjoiMC4xIiwicmVsYXRlZF9yZWNlaXB0X2lkIjoiZy0wMDI1IiwicmVzdWx0X2hhc2giOiI0YWVhODkzY2QyOGIwY2E3OGQ4ZTU5ZDkyNzQzYjBkMWQ5MDk0YTliMTE2YWU0ZjU4YmViOTlkNjY1MDg0NjBiIiwic2NvcGVfZ3JhbnRlZCI6InRvb2xzPVtyZXBvLndyaXRlXTtyZXNvdXJjZXM9W3JlcG9dO29wcz1bY2FsbF07bGltaXRzPXtleHRlcm5hbF9jYWxscz0xMDAsc3BlbmRfdW5pdHM9MTAwMH0iLCJzZXF1ZW5jZSI6MjYsInRpbWVzdGFtcCI6MTc2NDUwNTQ2MCwidmVyZGljdCI6eyJidXJuX2Ftb3VudCI6MCwiZGVjaXNpb24iOiJidXJuIiwibm9taW5hbF9idXJuIjoxMCwicG9zdF9idXJuX3N0YW5kaW5nIjowLCJwcmVfYnVybl9zdGFuZGluZyI6MCwicmVhc29uX2NvZGUiOiJyZXZva2VkIn19",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "/ZQAn3VpISwM5pO+W9CNydLctOU3UGQRan7jZdKxNcE="
+          }
+        ]
+      },
+      "prior_receipt_hash": "9e11c25c42ba3fa3a7ffb616add0bcf19c3901600f37adc69af227f263a4c753",
+      "receipt_hash": "63e9dbff3c2097b6c3a67786deac2f5e1637f3342958369d25ca7fe13642cc17",
+      "receipt_id": "g-0026",
+      "receipt_type": "BURN",
+      "receipt_version": "0.1",
+      "related_receipt_id": "g-0025",
+      "result_hash": "4aea893cd28b0ca78d8e59d92743b0d1d9094a9b116ae4f58beb99d66508460b",
+      "scope_granted": "tools=[repo.write];resources=[repo];ops=[call];limits={external_calls=100,spend_units=1000}",
+      "sequence": 26,
+      "timestamp": 1764505460,
+      "verdict": {
+        "burn_amount": 0,
+        "decision": "burn",
+        "nominal_burn": 10,
+        "post_burn_standing": 0,
+        "pre_burn_standing": 0,
+        "reason_code": "revoked"
+      }
+    },
+    {
+      "action": {
+        "arguments_hash": "6fa556c81a5647ccc0329c9257c4b947e3da74749e539204440c120e0b992c67",
+        "name": "repo.write",
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI2ZmE1NTZjODFhNTY0N2NjYzAzMjljOTI1N2M0Yjk0N2UzZGE3NDc0OWU1MzkyMDQ0NDBjMTIwZTBiOTkyYzY3IiwibmFtZSI6InJlcG8ud3JpdGUiLCJzY29wZV9jbGFzcyI6IndyaXRlIn0sImFnZW50Ijp7ImlkIjoiYWdlbnQtcm9ndWUtMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiZGVsZWdhdGlvbl9tYW5pZmVzdF9pZCI6Im0tcm9ndWUiLCJkZWxlZ2F0b3IiOiJmb3VuZGVyIiwiZWZmZWN0cyI6eyJhcnRpZmFjdHNfY2hhbmdlZCI6W10sImV4dGVybmFsX2NhbGxzIjpbXSwic3ViX2RlbGVnYXRpb25zIjpbXX0sInByaW9yX3JlY2VpcHRfaGFzaCI6IjYzZTlkYmZmM2MyMDk3YjZjM2E2Nzc4NmRlYWMyZjVlMTYzN2YzMzQyOTU4MzY5ZDI1Y2E3ZmUxMzY0MmNjMTciLCJyZWFzb25fY29kZSI6InJldm9rZWQiLCJyZWNlaXB0X2lkIjoiZy0wMDI3IiwicmVjZWlwdF90eXBlIjoiREVOSUFMIiwicmVjZWlwdF92ZXJzaW9uIjoiMC4xIiwicmVzdWx0X2hhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1Iiwic2NvcGVfZ3JhbnRlZCI6InRvb2xzPVtyZXBvLndyaXRlLHJlcG8ucmVhZF07cmVzb3VyY2VzPVtyZXBvXTtvcHM9W2NhbGxdO2xpbWl0cz17ZXh0ZXJuYWxfY2FsbHM9MTAwLHNwZW5kX3VuaXRzPTEwMDAwfSIsInNlcXVlbmNlIjoyNywidGltZXN0YW1wIjoxNzY0NTA1NTIwLCJ2ZXJkaWN0Ijp7ImRlY2lzaW9uIjoiZGVueSIsImRldGFpbCI6ImF1dGhvcmlzYXRpb24gJ2F1dGgtcm9ndWUtMC0wJyB3YXMgYWxyZWFkeSBjb25zdW1lZCBieSBhbiBlYXJsaWVyIEFDVElPTiByZWNlaXB0OyBhIHJlcGxheSBob2xkcyBubyBzdGFuZGluZyBhdXRob3JpdHkiLCJpbmRlcGVuZGVudF9ncm91bmRzIjpbInJldm9rZWQiLCJzdGFuZGluZy1jZWlsaW5nIl0sInJlYXNvbl9jb2RlIjoicmV2b2tlZCIsInJlcGxheWVkX2F1dGhvcmlzYXRpb24iOiJhdXRoLXJvZ3VlLTAtMCIsInN0YW5kaW5nX2NlaWxpbmciOjB9fQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "Si5OWzhNogUIKnxd8LE7tMP5CpmFiqNM+QQCkAYLJHM="
+          }
+        ]
+      },
+      "prior_receipt_hash": "63e9dbff3c2097b6c3a67786deac2f5e1637f3342958369d25ca7fe13642cc17",
+      "reason_code": "revoked",
+      "receipt_hash": "7815cc0ec2cd5b0ca8161b524af9bad25037d97ec56ae450036d669669532411",
+      "receipt_id": "g-0027",
+      "receipt_type": "DENIAL",
+      "receipt_version": "0.1",
+      "result_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 27,
+      "timestamp": 1764505520,
+      "verdict": {
+        "decision": "deny",
+        "detail": "authorisation 'auth-rogue-0-0' was already consumed by an earlier ACTION receipt; a replay holds no standing authority",
+        "independent_grounds": [
+          "revoked",
+          "standing-ceiling"
+        ],
+        "reason_code": "revoked",
+        "replayed_authorisation": "auth-rogue-0-0",
+        "standing_ceiling": 0
+      }
+    },
+    {
+      "action": {
+        "arguments_hash": "6fa556c81a5647ccc0329c9257c4b947e3da74749e539204440c120e0b992c67",
+        "burn_amount": 0,
+        "name": "standing.burn",
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-rogue-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "delegation_manifest_id": "m-rogue",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI2ZmE1NTZjODFhNTY0N2NjYzAzMjljOTI1N2M0Yjk0N2UzZGE3NDc0OWU1MzkyMDQ0NDBjMTIwZTBiOTkyYzY3IiwiYnVybl9hbW91bnQiOjAsIm5hbWUiOiJzdGFuZGluZy5idXJuIiwic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXJvZ3VlLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImRlbGVnYXRpb25fbWFuaWZlc3RfaWQiOiJtLXJvZ3VlIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiI3ODE1Y2MwZWMyY2Q1YjBjYTgxNjFiNTI0YWY5YmFkMjUwMzdkOTdlYzU2YWU0NTAwMzZkNjY5NjY5NTMyNDExIiwicmVjZWlwdF9pZCI6ImctMDAyOCIsInJlY2VpcHRfdHlwZSI6IkJVUk4iLCJyZWNlaXB0X3ZlcnNpb24iOiIwLjEiLCJyZWxhdGVkX3JlY2VpcHRfaWQiOiJnLTAwMjciLCJyZXN1bHRfaGFzaCI6IjRhZWE4OTNjZDI4YjBjYTc4ZDhlNTlkOTI3NDNiMGQxZDkwOTRhOWIxMTZhZTRmNThiZWI5OWQ2NjUwODQ2MGIiLCJzY29wZV9ncmFudGVkIjoidG9vbHM9W3JlcG8ud3JpdGUscmVwby5yZWFkXTtyZXNvdXJjZXM9W3JlcG9dO29wcz1bY2FsbF07bGltaXRzPXtleHRlcm5hbF9jYWxscz0xMDAsc3BlbmRfdW5pdHM9MTAwMDB9Iiwic2VxdWVuY2UiOjI4LCJ0aW1lc3RhbXAiOjE3NjQ1MDU1MjAsInZlcmRpY3QiOnsiYnVybl9hbW91bnQiOjAsImRlY2lzaW9uIjoiYnVybiIsIm5vbWluYWxfYnVybiI6NDAsInBvc3RfYnVybl9zdGFuZGluZyI6MCwicHJlX2J1cm5fc3RhbmRpbmciOjAsInJlYXNvbl9jb2RlIjoicmV2b2tlZCJ9fQ==",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "+U06H88oQmi3LX86qCSyT+XHtuPSGTHqjtGWHs7i0AM="
+          }
+        ]
+      },
+      "prior_receipt_hash": "7815cc0ec2cd5b0ca8161b524af9bad25037d97ec56ae450036d669669532411",
+      "receipt_hash": "062dfbba60ab2ae2b0b239e5db2d17124b8d0a46281eb64489e9bbb1c3502b2e",
+      "receipt_id": "g-0028",
+      "receipt_type": "BURN",
+      "receipt_version": "0.1",
+      "related_receipt_id": "g-0027",
+      "result_hash": "4aea893cd28b0ca78d8e59d92743b0d1d9094a9b116ae4f58beb99d66508460b",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 28,
+      "timestamp": 1764505520,
+      "verdict": {
+        "burn_amount": 0,
+        "decision": "burn",
+        "nominal_burn": 40,
+        "post_burn_standing": 0,
+        "pre_burn_standing": 0,
+        "reason_code": "revoked"
+      }
+    },
+    {
+      "action": {
+        "arguments_hash": "49a53679b0e83280b7c36a0ca662a82db5b12ff7b4c2afcfcaf9d04c499aeb89",
+        "budget_cost": 3,
+        "delegation_depth": 0,
+        "irreversibility": 0,
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-sibling-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "counterparty_id": "counterparty-beta",
+      "counterparty_sig": "mPtYnqBm5Hd9vyPdLJ98rIGjJUm/xR2h91olluH1v2Q=",
+      "delegation_manifest_id": "m-sibling",
+      "delegator": "founder",
+      "effects": {
+        "artifacts_changed": [],
+        "external_calls": [],
+        "sub_delegations": []
+      },
+      "envelope": {
+        "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI0OWE1MzY3OWIwZTgzMjgwYjdjMzZhMGNhNjYyYTgyZGI1YjEyZmY3YjRjMmFmY2ZjYWY5ZDA0YzQ5OWFlYjg5IiwiYnVkZ2V0X2Nvc3QiOjMsImRlbGVnYXRpb25fZGVwdGgiOjAsImlycmV2ZXJzaWJpbGl0eSI6MCwibmFtZSI6InJlcG8ud3JpdGUiLCJyaXNrX3dlaWdodCI6Mywic2NvcGVfY2xhc3MiOiJ3cml0ZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LXNpYmxpbmctMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiY291bnRlcnBhcnR5X2lkIjoiY291bnRlcnBhcnR5LWJldGEiLCJjb3VudGVycGFydHlfc2lnIjoibVB0WW5xQm01SGQ5dnlQZExKOThySUdqSlVtL3hSMmg5MW9sbHVIMXYyUT0iLCJkZWxlZ2F0aW9uX21hbmlmZXN0X2lkIjoibS1zaWJsaW5nIiwiZGVsZWdhdG9yIjoiZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiIwNjJkZmJiYTYwYWIyYWUyYjBiMjM5ZTVkYjJkMTcxMjRiOGQwYTQ2MjgxZWI2NDQ4OWU5YmJiMWMzNTAyYjJlIiwicmVjZWlwdF9pZCI6ImctMDAyOSIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiZTkzZjIzZjdjZmEzYzg0MGQwOWU5NmU1NzAwNTZjMzljOTAwZDUyOTU4ZWMxN2MzZTAzYjM1M2M5ZjMzYmZjMCIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVwby53cml0ZSxyZXBvLnJlYWRdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXTtsaW1pdHM9e2V4dGVybmFsX2NhbGxzPTEwMCxzcGVuZF91bml0cz0xMDAwMH0iLCJzZXF1ZW5jZSI6MjksInRpbWVzdGFtcCI6MTc2NDUwNTcwMH0=",
+        "payload_type": "application/vnd.acta.receipt.v0.1+json",
+        "signatures": [
+          {
+            "key_id": "acta-test-key-1",
+            "signature": "Xxf9cVZz7i2+TqGaEsJ4Cwhcw8cQ1iRHF6+ftAOuvVI="
+          }
+        ]
+      },
+      "prior_receipt_hash": "062dfbba60ab2ae2b0b239e5db2d17124b8d0a46281eb64489e9bbb1c3502b2e",
+      "receipt_hash": "88cef5ea22620d5d6717862f6c4b6f40d6f0a8d533d34dcee95c9e590892fc3e",
+      "receipt_id": "g-0029",
+      "receipt_type": "ACTION",
+      "receipt_version": "0.1",
+      "result_hash": "e93f23f7cfa3c840d09e96e570056c39c900d52958ec17c3e03b353c9f33bfc0",
+      "scope_granted": "tools=[repo.write,repo.read];resources=[repo];ops=[call];limits={external_calls=100,spend_units=10000}",
+      "sequence": 29,
+      "timestamp": 1764505700
+    }
+  ]
+}

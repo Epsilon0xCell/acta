@@ -1,0 +1,120 @@
+{
+  "checkpoint": {
+    "agent_id": "agent-operator-1",
+    "burn_total": 0,
+    "ceilings_vector": {
+      "write": {
+        "max_budget_per_action": 100,
+        "max_budget_per_epoch": 1000,
+        "max_data_sensitivity": 3,
+        "max_delegation_depth": 3,
+        "max_fanout": 8,
+        "max_irreversibility": 3
+      }
+    },
+    "charter_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "checkpoint_sig": {
+      "key_id": "checkpoint-issuer-1",
+      "signature": "IXkBM4gkS9GOXJkj4u3M0W90JjaQ0T7e8WMmZinkj94="
+    },
+    "decay_applied": 0,
+    "denials_by_reason_code": {},
+    "epoch": 0,
+    "eval_time": 1763900120,
+    "integrity_hash": "f7e764a9b70c3539c591aae960171eaf1144673e558e109e9bcdfd8f7553917d",
+    "mint_total": 18,
+    "org_id": "org-example-0001",
+    "receipt_chain_head_hash": "0050639e99bff06d8b209ace6e08e484ae857521989438069db875ae7f2b46d5",
+    "standing_policy_hash": "251f0c2451d1c7b1fc3c853197706f9266d0b46cbbce29929fc9437294dc5291",
+    "standing_vector": {
+      "write": 18
+    },
+    "witness_cosigs": [
+      {
+        "key_id": "w-1",
+        "signature": "IXkBM4gkS9GOXJkj4u3M0W90JjaQ0T7e8WMmZinkj94="
+      },
+      {
+        "key_id": "w-2",
+        "signature": "IXkBM4gkS9GOXJkj4u3M0W90JjaQ0T7e8WMmZinkj94="
+      },
+      {
+        "key_id": "w-3",
+        "signature": "IXkBM4gkS9GOXJkj4u3M0W90JjaQ0T7e8WMmZinkj94="
+      }
+    ]
+  },
+  "expected_error_contains": "does not match recomputation",
+  "expected_verdict": "invalid",
+  "kind": "checkpoint",
+  "name": "checkpoint whose chain head binds a different chain (anchor for another hash)",
+  "receipts": [
+    {
+      "action": {
+        "arguments_hash": "2a53eaab2dfb61f9e98c6f383810390df3ee29a5900e2d99db7d4adf369f49eb",
+        "name": "repo.read",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-operator-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "receipt_type": "ACTION",
+      "result_hash": "09cb55a0c98ff369fab4d8c44016c6780b8a7000501daefa4ae556605a569f6b",
+      "timestamp": 1763900000
+    },
+    {
+      "action": {
+        "arguments_hash": "2a53eaab2dfb61f9e98c6f383810390df3ee29a5900e2d99db7d4adf369f49eb",
+        "name": "repo.read",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-operator-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "receipt_type": "ACTION",
+      "result_hash": "09cb55a0c98ff369fab4d8c44016c6780b8a7000501daefa4ae556605a569f6b",
+      "timestamp": 1763900060
+    }
+  ],
+  "standing_policy": {
+    "ceiling_curve": [
+      {
+        "max_budget_per_action": 100,
+        "max_budget_per_epoch": 1000,
+        "max_data_sensitivity": 3,
+        "max_delegation_depth": 3,
+        "max_fanout": 8,
+        "max_irreversibility": 3,
+        "min_standing": 0
+      }
+    ],
+    "scope_classes": {
+      "write": {
+        "burn_multipliers": {
+          "revoked": 1
+        },
+        "burn_unit": 36,
+        "half_life_seconds": 10000000,
+        "hop_attenuation_ppm": 1000000,
+        "mint_cap_per_epoch": 360,
+        "mint_rate": 2
+      }
+    },
+    "witness_policy": {
+      "quorum": 3,
+      "witness_key_ids": [
+        "w-1",
+        "w-2",
+        "w-3",
+        "w-4",
+        "w-5"
+      ]
+    }
+  }
+}

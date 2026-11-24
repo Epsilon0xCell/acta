@@ -1,0 +1,10 @@
+{
+  "checkpoint_chain_head": "0050639e99bff06d8b209ace6e08e484ae857521989438069db875ae7f2b46d5",
+  "id": "F-026",
+  "kind": "checkpoint",
+  "standing_vector": {
+    "write": 18
+  },
+  "title": "checkpoint with 3 of 5 witness cosignatures, meeting the quorum of 3",
+  "verdict": "valid"
+}

@@ -1,0 +1,8 @@
+{
+  "final_chain_head": "6f045a0db81f62398deb3cce5bfce8726691591380ccbfc7a07bffcebe36c976",
+  "id": "F-001",
+  "kind": "receipt_bundle",
+  "receipt_count": 3,
+  "title": "valid chain",
+  "verdict": "valid"
+}

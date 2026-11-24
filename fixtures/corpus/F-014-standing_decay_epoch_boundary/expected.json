@@ -1,0 +1,14 @@
+{
+  "authority": "Standing recomputed by ComputeStanding over the fixture receipts and standing_policy (specification Section 16)",
+  "expected_standing": {
+    "write": {
+      "decay_applied": 18,
+      "minted": 24,
+      "standing": 6
+    }
+  },
+  "id": "F-014",
+  "kind": "standing",
+  "title": "Standing decays by whole half-lives across an epoch edge",
+  "verdict": null
+}

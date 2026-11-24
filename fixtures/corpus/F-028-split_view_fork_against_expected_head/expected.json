@@ -1,0 +1,10 @@
+{
+  "expected_code": "TRUNCATED",
+  "final_chain_head": "325efa0be0b52d1f6a78bbb74cde4a17414d516335e756de629f2f613d559780",
+  "id": "F-028",
+  "kind": "receipt_bundle",
+  "receipt_count": 2,
+  "title": "split view: a forked prefix presented against the anchored head",
+  "verdict": "invalid",
+  "verify_expected_head": "6f045a0db81f62398deb3cce5bfce8726691591380ccbfc7a07bffcebe36c976"
+}

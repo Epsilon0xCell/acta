@@ -1,0 +1,11 @@
+{
+  "checkpoint_chain_head": "0050639e99bff06d8b209ace6e08e484ae857521989438069db875ae7f2b46d5",
+  "expected_error_contains": "does not match recomputation",
+  "id": "F-027",
+  "kind": "checkpoint",
+  "standing_vector": {
+    "write": 18
+  },
+  "title": "checkpoint whose chain head binds a different chain (anchor for another hash)",
+  "verdict": "invalid"
+}

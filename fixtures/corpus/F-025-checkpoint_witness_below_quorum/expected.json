@@ -1,0 +1,11 @@
+{
+  "checkpoint_chain_head": "0050639e99bff06d8b209ace6e08e484ae857521989438069db875ae7f2b46d5",
+  "expected_error_contains": "witness quorum not met",
+  "id": "F-025",
+  "kind": "checkpoint",
+  "standing_vector": {
+    "write": 18
+  },
+  "title": "checkpoint with 2 of 5 witness cosignatures, below the quorum of 3",
+  "verdict": "invalid"
+}

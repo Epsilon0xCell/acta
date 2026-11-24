@@ -1,0 +1,84 @@
+{
+  "bundle": {
+    "bundle_version": "0.1",
+    "receipts": [
+      {
+        "action": {
+          "arguments_hash": "b348ccabde3d3dc0070604745e841c045e78aa27013b05e7bd2b031b813e51a2",
+          "name": "grant.delegate"
+        },
+        "agent": {
+          "id": "agent-operator-1",
+          "model": "model-x",
+          "model_version": "1.0"
+        },
+        "delegator": "seat-founder",
+        "effects": {
+          "artifacts_changed": [],
+          "external_calls": [],
+          "sub_delegations": []
+        },
+        "envelope": {
+          "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJiMzQ4Y2NhYmRlM2QzZGMwMDcwNjA0NzQ1ZTg0MWMwNDVlNzhhYTI3MDEzYjA1ZTdiZDJiMDMxYjgxM2U1MWEyIiwibmFtZSI6ImdyYW50LmRlbGVnYXRlIn0sImFnZW50Ijp7ImlkIjoiYWdlbnQtb3BlcmF0b3ItMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiZGVsZWdhdG9yIjoic2VhdC1mb3VuZGVyIiwiZWZmZWN0cyI6eyJhcnRpZmFjdHNfY2hhbmdlZCI6W10sImV4dGVybmFsX2NhbGxzIjpbXSwic3ViX2RlbGVnYXRpb25zIjpbXX0sInByaW9yX3JlY2VpcHRfaGFzaCI6IjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJyZWNlaXB0X2lkIjoici0wMDAxIiwicmVjZWlwdF90eXBlIjoiR1JBTlQiLCJyZWNlaXB0X3ZlcnNpb24iOiIwLjEiLCJyZXN1bHRfaGFzaCI6IjU4MmRkYjE5NDcxYTJiZWE3Y2QxNTRkNzU2MDFiZmEwMjhmMmM5OGEyNzI5ZmEyZGRiNjE3MDVhODcyMjM3M2IiLCJzY29wZV9ncmFudGVkIjoidG9vbHM9W3JlYWQsd3JpdGVdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXSIsInNlcXVlbmNlIjowLCJ0aW1lc3RhbXAiOjE3NjM5MDAwMDB9",
+          "payload_type": "application/vnd.acta.receipt.v0.1+json",
+          "signatures": [
+            {
+              "key_id": "acta-test-key-1",
+              "signature": "frP98vnQuHisIszQPwyMGUucE8cYAFiOfELLFtiQah4="
+            }
+          ]
+        },
+        "prior_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "47660a61a9e60b73c646316477d18a524a241989623f2e7b659ae0e9c1f2fb31",
+        "receipt_id": "r-0001",
+        "receipt_type": "GRANT",
+        "receipt_version": "0.1",
+        "result_hash": "582ddb19471a2bea7cd154d75601bfa028f2c98a2729fa2ddb61705a8722373b",
+        "scope_granted": "tools=[read,write];resources=[repo];ops=[call]",
+        "sequence": 0,
+        "timestamp": 1763900000
+      },
+      {
+        "action": {
+          "arguments_hash": "e857929f45a310a68610f5afb181a752ea40e13ae639d384238e3bad6b3e1b57",
+          "name": "repo.write_file"
+        },
+        "agent": {
+          "id": "agent-operator-1",
+          "model": "model-x",
+          "model_version": "1.0"
+        },
+        "delegator": "seat-founder",
+        "effects": {
+          "artifacts_changed": [],
+          "external_calls": [],
+          "sub_delegations": []
+        },
+        "envelope": {
+          "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJlODU3OTI5ZjQ1YTMxMGE2ODYxMGY1YWZiMTgxYTc1MmVhNDBlMTNhZTYzOWQzODQyMzhlM2JhZDZiM2UxYjU3IiwibmFtZSI6InJlcG8ud3JpdGVfZmlsZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LW9wZXJhdG9yLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImRlbGVnYXRvciI6InNlYXQtZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiI0NzY2MGE2MWE5ZTYwYjczYzY0NjMxNjQ3N2QxOGE1MjRhMjQxOTg5NjIzZjJlN2I2NTlhZTBlOWMxZjJmYjMxIiwicmVhc29uX2NvZGUiOiJib2d1cy1jb2RlIiwicmVjZWlwdF9pZCI6InItYm9ndXMtZGVuaWFsIiwicmVjZWlwdF90eXBlIjoiREVOSUFMIiwicmVjZWlwdF92ZXJzaW9uIjoiMC4xIiwicmVzdWx0X2hhc2giOiJmMWRhOTNkMTg0ZTFiZDY0ODk5Yjc3NzBmZWRhMjUyM2JkYTQyYjRlNzY3NjQzODQ1Y2E1ZmE2YzQ3ZDYyYzhhIiwic2NvcGVfZ3JhbnRlZCI6InRvb2xzPVtyZWFkLHdyaXRlXTtyZXNvdXJjZXM9W3JlcG9dO29wcz1bY2FsbF0iLCJzZXF1ZW5jZSI6MSwidGltZXN0YW1wIjoxNzYzOTAwMDYwfQ==",
+          "payload_type": "application/vnd.acta.receipt.v0.1+json",
+          "signatures": [
+            {
+              "key_id": "acta-test-key-1",
+              "signature": "UjoqKlirnxI5LDeGSdwWfoEZaPzXsnatkouUfL+LWnU="
+            }
+          ]
+        },
+        "prior_receipt_hash": "47660a61a9e60b73c646316477d18a524a241989623f2e7b659ae0e9c1f2fb31",
+        "reason_code": "bogus-code",
+        "receipt_hash": "01364d348b6eb0d0018f67d169d94e38fb01bc3a0d783abd71ac4d0232f1c340",
+        "receipt_id": "r-bogus-denial",
+        "receipt_type": "DENIAL",
+        "receipt_version": "0.1",
+        "result_hash": "f1da93d184e1bd64899b7770feda2523bda42b4e767643845ca5fa6c47d62c8a",
+        "scope_granted": "tools=[read,write];resources=[repo];ops=[call]",
+        "sequence": 1,
+        "timestamp": 1763900060
+      }
+    ]
+  },
+  "expected_code": "DENIAL_REASON_MISSING",
+  "expected_verdict": "invalid",
+  "kind": "receipt_bundle",
+  "name": "denial with an unknown reason code"
+}

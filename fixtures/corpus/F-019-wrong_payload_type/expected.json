@@ -1,0 +1,9 @@
+{
+  "expected_code": "INVALID_ENVELOPE",
+  "final_chain_head": "6f045a0db81f62398deb3cce5bfce8726691591380ccbfc7a07bffcebe36c976",
+  "id": "F-019",
+  "kind": "receipt_bundle",
+  "receipt_count": 3,
+  "title": "signature envelope with the wrong payload type (type confusion)",
+  "verdict": "invalid"
+}

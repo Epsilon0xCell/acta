@@ -1,0 +1,9 @@
+{
+  "expected_code": "CHAIN_BREAK",
+  "final_chain_head": "be1fd8813106a5d3c783bda77ae15aa1c43b4300f28f6e459c0895ed6f0f6a47",
+  "id": "F-008",
+  "kind": "receipt_bundle",
+  "receipt_count": 3,
+  "title": "forked chain: a receipt extending the grant, not the head",
+  "verdict": "invalid"
+}
