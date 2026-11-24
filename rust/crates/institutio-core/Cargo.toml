@@ -1,0 +1,15 @@
+[package]
+name = "institutio-core"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Institutio charter validation, ComputeStanding, and Standing checkpoints, built on acta-core only."
+
+[dependencies]
+acta-core = { path = "../acta-core" }
+serde_json = { version = "1", features = ["std"] }
+base64 = "0.22"
+
+[lints]
+workspace = true

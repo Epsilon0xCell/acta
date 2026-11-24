@@ -1,0 +1,35 @@
+# Acta Rust core workspace.
+#
+# Author: Gavin Blacklock
+#
+# Crates:
+#   acta-core   receipt model, deterministic CBOR, DSSE envelopes,
+#               Ed25519 signing, hash chain verification.
+#   acta-verify the one-file offline verifier binary, plus the
+#               conformance runner for the Python prototype fixtures.
+#   institutio-core
+#               charter validation, ComputeStanding, and Standing
+#               checkpoints. Depends on acta-core only; acta-core
+#               never depends on it (the one-way dependency rule).
+#
+# Determinism rules (engineering blueprint, rulebook D1 to D20):
+# no floating point in acta-core, no HashMap iteration in deterministic
+# paths (BTreeMap only), integer arithmetic only, pinned dependencies
+# (Cargo.lock is committed).
+
+[workspace]
+resolver = "2"
+members = ["crates/acta-core", "crates/acta-verify", "crates/institutio-core"]
+
+[workspace.package]
+edition = "2021"
+license = "Apache-2.0"
+authors = ["Gavin Blacklock"]
+
+[workspace.lints.clippy]
+float_arithmetic = "deny"
+float_cmp = "deny"
+
+[profile.release]
+debug = false
+strip = true
